@@ -1,31 +1,31 @@
 --
 Compile for Windows 32-bit:
-GOOS=windows GOARCH=386 go build -o pingcheck_win32.exe pingcheckv9.go
+GOOS=windows GOARCH=386 go build -o pingcheck_win32.exe pingcheckv10.go
 --
 Compile for Windows 64-bit:
-GOOS=windows GOARCH=amd64 go build -o pingcheck_win64.exe pingcheckv9.go
+GOOS=windows GOARCH=amd64 go build -o pingcheck_win64.exe pingcheckv10.go
 --
 Compile for Linux 32-bit:
-GOOS=linux GOARCH=386 go build -o pingcheck_linux32 pingcheckv9.go
+GOOS=linux GOARCH=386 go build -o pingcheck_linux32 pingcheckv10.go
 --
 Compile for Linux 64-bit:
-GOOS=linux GOARCH=amd64 go build -o pingcheck_linux64 pingcheckv9.go
+GOOS=linux GOARCH=amd64 go build -o pingcheck_linux64 pingcheckv10.go
 --
 Compile for macOS (64-bit):
-GOOS=darwin GOARCH=amd64 go build -o pingcheck_mac pingcheckv9.go
+GOOS=darwin GOARCH=amd64 go build -o pingcheck_mac pingcheckv10.go
 --
 Compile for Raspberry Pi (ARM architecture):
 For ARMv6 (used in older Raspberry Pi models like the Raspberry Pi 1 and Zero):
-GOOS=linux GOARCH=arm GOARM=6 go build -o pingcheck_rpi_armv6 pingcheckv9.go
+GOOS=linux GOARCH=arm GOARM=6 go build -o pingcheck_rpi_armv6 pingcheckv10.go
 --
 For ARMv7 (used in Raspberry Pi 2 and 3):
-GOOS=linux GOARCH=arm GOARM=7 go build -o pingcheck_rpi_armv7 pingcheckv9.go
+GOOS=linux GOARCH=arm GOARM=7 go build -o pingcheck_rpi_armv7 pingcheckv10.go
 --
 For ARM64 (used in Raspberry Pi 3 Model B+ and 4):
-GOOS=linux GOARCH=arm64 go build -o pingcheck_rpi_arm64 pingcheckv9.go
+GOOS=linux GOARCH=arm64 go build -o pingcheck_rpi_arm64 pingcheckv10.go
 --
 Compile for Apple Silicon Architecture macOS (named arm64):
-GOOS=darwin GOARCH=arm64 go build -o pingcheck_mac_arm64 pingcheckv9.go
+GOOS=darwin GOARCH=arm64 go build -o pingcheck_mac_arm64 pingcheckv10.go
 --
 Notes:
 GOOS specifies the target operating system.
