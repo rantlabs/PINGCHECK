@@ -53,3 +53,16 @@ www.google.com hello world SUCCESS 2025-06-16T16:44:16-07:00
 hello world www.google.com SUCCESS 2025-06-16T16:44:16-07:00
 99.99.99.99 FAIL 2025-06-16T16:44:18-07:00
 ```
+Example 5 Using the -repeat and -pause flags that can be combined with using the -file option as input.
+```
+pingcheck -file file.txt -repeat 3 -pause 2 -updown
+hello world www.google.com SUCCESS 2025-06-16T17:26:04-07:00
+www.google.com hello world SUCCESS 2025-06-16T17:26:04-07:00
+99.99.99.99 FAIL 2025-06-16T17:26:06-07:00
+www.google.com hello world SUCCESS 2025-06-16T17:26:08-07:00
+hello world www.google.com SUCCESS 2025-06-16T17:26:08-07:00
+99.99.99.99 FAIL 2025-06-16T17:26:10-07:00
+www.google.com hello world SUCCESS 2025-06-16T17:26:12-07:00
+hello world www.google.com SUCCESS 2025-06-16T17:26:12-07:00
+99.99.99.99 FAIL 2025-06-16T17:26:14-07:00
+```
