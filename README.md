@@ -10,13 +10,15 @@ Usage of pingcheck:
   -output string
     	Output file to write the results
   -pause int
-    	Pause time in seconds between repeated pings if -repeat is set to 0 (default 30)
+    	Pause time in seconds between repeated pings if -repeat is set to 0 (only works with -file) (default 30)
   -repeat int
-    	Number of cycles to ping through the list (0 for infinite) (default 1)
+    	Number of cycles to ping through the list (0 for infinite, only works with -file) (default 1)
   -timeout duration
     	Timeout duration for each ping (default 1s)
   -updown
     	Show both successful and unsuccessful ping results
+
+Note: The -repeat and -pause options only work with the -file option.
 ```
 Examples
 ```
