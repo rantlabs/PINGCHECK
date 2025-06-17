@@ -66,3 +66,10 @@ www.google.com hello world SUCCESS 2025-06-16T17:26:12-07:00
 hello world www.google.com SUCCESS 2025-06-16T17:26:12-07:00
 99.99.99.99 FAIL 2025-06-16T17:26:14-07:00
 ```
+Binary versions available for download in this repo
+```
+pingcheck_linux32	pingcheck_rpi_arm64	pingcheck_win32.exe
+pingcheck_linux64	pingcheck_rpi_armv6	pingcheck_win64.exe
+pingcheck_mac_arm64	pingcheck_rpi_armv7
+```
+Basic instructions for compiling the GO source code available in the the notes.txt file
